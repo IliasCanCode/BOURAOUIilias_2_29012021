@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/static/Raleway-Regular.ttf') format('truetype')
+}
+*{
+    font-family: 'Raleway';
+}
+#blocpage{
+    width: 50%;
+    margin: auto;
+    border: olivedrab solid 1px;
+}
+header{
+    display: flex;
+    width: 100%;
+    border: orange 1px solid;justify-content: space-between;
+}
+#logo{
+    width: 200px;
+    height: 75px;
+}
+#menu1{
+    border: orange 1px solid;
+    display: flex;
+    
+}
