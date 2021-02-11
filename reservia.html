@@ -9,33 +9,36 @@
 </head>
 <body>
     <div id="blocpage">
-    <header>
-        <div id="logo">
-            <img src="../Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo de Réservia">
-        </div>
-        <nav id="menu1">
-            <ul>
-                <li><a href="#hébergement">Hébergement</a></li>
-                <li><a href="#activités">Activités</a></li>
-                <li><strong><a href="#inscrire">S'inscrire</a></strong></li>
-            </ul>
-        </nav>
-    </header>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <div id="recherche">
-            <i class="fas fa-map-marker-alt"></i>
+        <header>
+            <div id="logo">                
+                    <img src="../Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo de Réservia">                
+            </div>
+
+            <nav id="menu1">
+                <ul>
+                    <li><a href="#hébergement">Hébergement</a></li>
+                    <li><a href="#activités">Activités</a></li>
+                    <li><strong><a href="#inscrire">S'inscrire</a></strong></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="haut">
+            
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                    
+
             <form method="post" action="traitement.php">
-                <p>
+                <p id="recherche">
+                    <i class="fas fa-map-marker-alt"></i>
                     <input type="search" name="recherche" id="recherche" value="Marseille, France"/>
-                </p>
-                <p>
                     <input type="submit" value="Envoyer"/>
-                </p>        
-            </form>
-        </div>
+                </p>                            
+            </form>           
+
             <div id="filtres">
-                <p>
+                <p >
                     <strong>Filtres</strong>
                 </p>
                 <div class="contenufiltres">
@@ -55,123 +58,136 @@
                     <p>Animaux autorisés</p>
                 </div>
             </div>
-            <span id="texte">
+
+            <div id="texte">
                 <i class="fas fa-info-circle"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </span>
-            <div id="hébergement">
-                <section class="gauche">
+            </div>
+        </section>
+
+        <main id="hébergement">
+            <section class="gauche">
+                
+
+            <!-- Alternative aux listes
+                <div>
+                    <article>
+                        <figure>
+                            <img src="../Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        </figure>
+                        <h2>Auberge La Cannebière</h2>
+                        <p>Nuit à partir de <strong>25$</strong></p>
+                    </article>
+                </div>-->
+
+                <ul id="bullesgauche">
                     <h1>Hébergements à Marseille</h1>
-                    <aside>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                         <h2>Auberge La Cannebière</h2>
                         <p>Nuit à partir de <strong>25$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                         <h2>Hôtel du port</h2>
                         <p>Nuit à partir de <strong>52$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                         <h2>Hôtel les mouettes</h2>
                         <p>Nuit à partir de <strong>76$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                         <h2>Hôtel de la mer</h2>
                         <p>Nuit à partir de <strong>46$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                         <h2>Auberge le panier</h2>
                         <p>Nuit à partir de <strong>23$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                         <h2>Hôtel chez Amina</h2>
                         <p>Nuit à partir de <strong>96$</strong></p>
-                    </aside>
-                </section>
-                <section class="droite">
-                    <h1>Les plus populaires
-                        <i class="fas fa-chart-line"></i>
-                    </h1>
-                    <aside>
+                    </li>
+                    <li></li>
+                </ul>
+            </section>
+            
+            <aside class="droite">
+                <h1>Les plus populaires
+                    <i class="fas fa-chart-line"></i>
+                </h1>
+                
+                <ul id="bullesdroite">   
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                         <h2>Hôtel le Soleil du matin</h2>
                         <p>Nuit à partir de <strong>128$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                         <h2>Au coeur de l'eau Chambres d'hotes</h2>
                         <p>Nuit à partir de <strong>71$</strong></p>
-                    </aside>
-                    <aside>
+                    </li>
+                    <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                         <h2>Hôtel Tout bleu et blanc</h2>
                         <p>Nuit à partir de <strong>68$</strong></p>
-                    </aside>
-                </section>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+
+        <section id="activités">
+            <h1>Activités à Marseille</h1>
+            <div>
+                <img src="../Projet 2 - Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                <h2>Vieux Port</h2>
             </div>
-            <div id="activités">
-                <h1>Activités à Marseille</h1>
-                <div>
-                    <img src="../Projet 2 - Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                    <h2>Vieux Port</h2>
-                </div>
-                <div>
-                    <img src="../Projet 2 - Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                    <h2>Fort de Pomèrgues</h2>
-                </div>
-                <div>
-                    <img src="../Projet 2 - Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                    <h2>Ile du Frioul</h2>
-                </div>
-                <div>
-                    <img src="../Projet 2 - Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                    <h2>Parc National des Calanques</h2>
-                </div>
-                <div>
-                    <img src="../Projet 2 - Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                    <h2>Notre-Dame-de-la-Garde</h2>
-                </div>
-                <div>
-                    <img src="../Projet 2 - Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                    <h2>Parc Longchamp</h2>
-                </div>
-            </div>           
-    </div>    
+            <div>
+                <img src="../Projet 2 - Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                <h2>Fort de Pomèrgues</h2>
+            </div>
+            <div>
+                <img src="../Projet 2 - Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                <h2>Ile du Frioul</h2>
+            </div>
+            <div>
+                <img src="../Projet 2 - Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                <h2>Parc National des Calanques</h2>
+            </div>
+            <div>
+                <img src="../Projet 2 - Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                <h2>Notre-Dame-de-la-Garde</h2>
+            </div>
+            <div>
+                <img src="../Projet 2 - Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                <h2>Parc Longchamp</h2>
+            </div>
+        </section>     
+
+      
         <footer>
-            <div>
-                <h2>A propos</h2>
-                <nav>
-                    <ul>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales de ventes</li>
-                        <li>Données et confidentialité</li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h2>Nos hébergements</h2>
-                <nav>
-                    <ul>
-                        <li>Charte qualité</li>
-                        <li>Soumettre votre hôtel</li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h2>Assistance</h2>
-                <nav>
-                    <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>                        
-                    </ul>
-                </nav>
-            </div>            
+            <ul>
+                <li><h2>A propos</h2></li>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de ventes</li>
+                <li>Données et confidentialité</li>
+            </ul>
+            <ul>
+                <li><h2>Nos hébergements</h2></li>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
+            <ul>
+                <li><h2>Assistance</h2></li>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
         </footer>
-    </div>
+    </div>  
 </body>
 </html>
