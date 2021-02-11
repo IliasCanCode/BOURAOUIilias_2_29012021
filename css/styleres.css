@@ -2,25 +2,117 @@
     font-family: 'Raleway';
     src: url('../fonts/static/Raleway-Regular.ttf') format('truetype')
 }
+
 *{
     font-family: 'Raleway';
+    list-style-type: none;
 }
-#blocpage{
-    width: 50%;
+
+/* Réinitialiser */
+body, ul, li, h1, h2, p, figure{
+    margin:0;
+    padding: 0;
+}
+
+img{
+    width: 150px;
+    height: 110px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#logo img{
+    height: 50px;
+    width: 80px;
+}
+
+#blocpage{/*Propriétés de la page*/
+    width: 900px;
     margin: auto;
-    border: olivedrab solid 1px;
 }
+
 header{
     display: flex;
-    width: 100%;
-    border: orange 1px solid;justify-content: space-between;
+    height: 100px;
+    align-items: baseline;
 }
-#logo{
-    width: 200px;
-    height: 75px;
-}
-#menu1{
-    border: orange 1px solid;
+
+#menu1 ul{
+    height: auto;
     display: flex;
-    
+    margin: 0px 0px 0px 500px;
+
+}
+
+#menu1 ul li{
+    margin-left: 15px;
+}
+
+#menu1 ul li:hover{
+    border-top: #DEEBFF 2px solid;
+}
+
+#filtres{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contenufiltres{
+    border: #f2f2f2 2px solid;
+    border-radius: 8px;
+    height: 30px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#filtres p{
+    margin-left: 15px;
+}
+
+#texte{
+    display: flex;
+    margin-top: 20px;
+}
+
+#texte p{/*L'ordre était mauvais*/
+    order: 2;
+}
+
+#texte i{
+    order: 1;
+}
+
+#hébergement{
+    display: flex;
+    margin-top: 50px;
+}
+
+#bullesgauche{
+    display: flex;
+    height: 600px;
+    max-width: 550px;
+    flex-flow: wrap;
+}
+
+.gauche{ /* Couleurs de fonds des bulles principales*/
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.droite{
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+#activités{
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 50px;
 }
