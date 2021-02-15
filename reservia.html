@@ -15,8 +15,8 @@
             </div>
 
             <nav id="menu1">
-                <ul>
-                    <li><a href="#hébergement">Hébergement</a></li>
+                <ul id="liens">
+                    <li><a href="#hébergement">Hébergements</a></li>
                     <li><a href="#activités">Activités</a></li>
                     <li><strong><a href="#inscrire">S'inscrire</a></strong></li>
                 </ul>
@@ -26,14 +26,14 @@
         <section id="haut">
             
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+                <p id="txthaut">En plein centre ville ou en pleine nature</p>
                     
 
             <form method="post" action="traitement.php">
-                <p id="recherche">
+                <p id="search">
                     <i class="fas fa-map-marker-alt"></i>
                     <input type="search" name="recherche" id="recherche" value="Marseille, France"/>
-                    <input type="submit" value="Envoyer"/>
+                    <input type="submit" value="Rechercher" id="send"/>
                 </p>                            
             </form>           
 
@@ -60,14 +60,14 @@
             </div>
 
             <div id="texte">
-                <i class="fas fa-info-circle"></i>
+                <i class="fas fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
         <main id="hébergement">
             <section class="gauche">
-                
+                <h1>Hébergements à Marseille</h1>
 
             <!-- Alternative aux listes
                 <div>
@@ -81,7 +81,7 @@
                 </div>-->
 
                 <ul id="bullesgauche">
-                    <h1>Hébergements à Marseille</h1>
+                    
                     <li>
                         <img src="../Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                         <h2>Auberge La Cannebière</h2>
