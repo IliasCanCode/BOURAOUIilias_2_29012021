@@ -98,7 +98,7 @@ header{
     top: -3px;
     border-radius: 0px;
     border: 1px #f2f2f2 solid;
-    width: 300px;
+    width: auto;
     padding-left: 15px;
 }
 
@@ -411,7 +411,7 @@ footer h2{
         margin-bottom: 15px;
     }
 
-    #haut{
+    #haut h1, #txthaut{
         text-align: center;
     }
 
@@ -458,4 +458,102 @@ footer h2{
 
 
     
+  }
+
+  @media screen and (max-width: 768px) {
+
+    #logo, #menu1{
+        width: auto;
+    }
+
+    #menu1{
+        display: flex;
+        align-items: center;
+    }
+
+    #menu1 ul{
+        flex-flow: wrap;
+    }
+
+    #menu1 ul li {
+        padding-top: 0px;
+    }
+
+    .resi{
+        order: 2;
+    }
+    
+    #insc{
+        order: 1;
+        font-size: 1.1em;
+    }
+
+    #filtres{
+        flex-flow: wrap;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+    }
+
+    #para{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .contenufiltres{
+        margin-left: 0px;
+    }
+
+    .droite{
+        order: 1;
+        margin-bottom: 20px ;
+    }
+
+    .gauche{
+        order: 2;
+    }
+
+    i.fas.fa-chart-line {
+        margin-left: 25%;
+    }
+
+    #bullesgauche{
+        align-items: center;
+    }
+
+    #bullesgauche li{
+        width: auto;
+    }
+
+    #bullesgauche img{
+        width: 100%;
+    }
+    
+    .colonne img{
+        bottom: 0px;
+    }
+
+    .plat, .colonne{
+        margin-left: 0px;
+    }
+
+    #listeac img{
+        width: 100%;
+    }
+
+    #listeac{
+        flex-direction: column;
+    }
+
+    #listeac figure{
+        height: 185px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    
+
   }
